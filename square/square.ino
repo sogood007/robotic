@@ -15,7 +15,7 @@ void forward(){
   digitalWrite(IN3, LOW);
   digitalWrite(IN4, HIGH);
   Serial.println("go forward!");
-}G
+}
 
 void back(){
   analogWrite(ENA, carSpeed);
@@ -54,19 +54,19 @@ void setup() {
 
 void loop() {
   forward();
-  delay(500);
-  right()
-  delay(500);
-  forward();
-  delay(500);
-  right();;
-  delay(500);
-  forward();
-  delay(500);
+  delay(600);
   right();
-  delay(500);
+  delay(400);
   forward();
-  delay(500);
+  delay(560);
   right();
-  delay(500);
+  delay(400);
+  forward();
+  delay(600);
+  right();
+  delay(400);
+  forward();
+  delay(600);
+  right();
+  delay(400);
 }
