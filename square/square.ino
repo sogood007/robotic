@@ -55,20 +55,10 @@ void setup() {
 void loop() {
   int side_length = 600;
   int turn = 400;
-  forward();
-  delay(side_length);
-  right();
-  delay(turn);
-  forward();
-  delay(side_length);
-  right();
-  delay(turn);
-  forward();
-  delay(side_length);
-  right();
-  delay(turn);
-  forward();
-  delay(side_length);
-  right();
-  delay(400);
+  for (int i = 0; i < 4; i++) {
+    forward();
+    delay(side_length);
+    right();
+    delay(turn);
+  }
 }
